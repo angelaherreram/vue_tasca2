@@ -17,7 +17,7 @@
   <!--NAVBAR-->
   <!--TO DO_ CAMBIAR FUENTE Y COLORES + FIXED + respostive + hover-->
 
-  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+  <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
 
     <div class="container ms-5 my-4">
     <a class="navbar-brand" href="#">
@@ -52,13 +52,13 @@
 
 
   <!--PANTALLA INICIO--> 
-  <!--TO DO: texto en gris / hover / botones a la izquierda / respostive--> 
+  <!--TO DO: texto en gris / hover / botones a la izquierda / respostive / alinear verticalmente foto y texto--> 
 
   <div class="container  my-5" id="pantallaInicio">
-    <div class="row">
-      <div class="col" id="columnaIzq">
+    <div class="row ">
+      <div class="col mt-5" id="columnaIzq">
 
-        <div class="container" id="textos-inicio">
+        <div class="container mt-5" id="textos-inicio">
           <div class="row mb-3" id="tituloInicio">
             <h1> A Simple Bookmark Manager</h1>
           </div>
@@ -87,8 +87,8 @@
           </div>
         </div>
       </div>
-      <div class="col " id="columnaDer">
-          <div class="container" id="firstImage">
+      <div class="col mt-5 " id="columnaDer">
+          <div class="container mt-5" id="firstImage">
             <img class="float-end" src="assets/Imagenes/illustration-hero.svg">
           </div>
       </div>
@@ -101,7 +101,7 @@
 <!--TO DO: texto en gris + respostive--> 
 <div class="container bg-white text-center my-5">
   <div class="row mb-2" id="tituloFeatures">
-    <h2> Features</h2>
+    <h3> Features</h3>
   </div>
   <div class="row justify-content-center" id="parrafoFeatures">
     <div class="col col-6">
@@ -160,7 +160,7 @@
               </div>
             </div>
 
-          </div>
+        </div>
       </div>
       <!--TABS2-->
       <div class="tab-pane bg-primary" id="searching">
@@ -177,7 +177,7 @@
 
   <div class="container bg-white text-center m-5">
     <div class="row mb-2" id="tituloDownload">
-      <h2> Download the extension</h2>
+      <h3> Download the extension</h3>
     </div>
     <div class="row justify-content-center" id="parrafoDownload">
       <div class="col col-6">
@@ -188,21 +188,56 @@
   </div>
   </div>
 
-  <div class=container id="extensions">
-    <div class="col">
+  <div class="container" id="extensions">
+
+    <div class="row ">
+
+    <div class="col align-self-start ">
+      <div class="container ">
+      <div class="row"> 
+        <div class="container m-4">
+          <img src="assets/Imagenes/logo-chrome.svg">
+        </div>
+      </div>
+      <div class="row h5"> Add to Chrome </div>
+      <div class="row"> Minimum version 62</div>
     </div>
-    <div class="col">
     </div>
-    <div class="col">
+
+    <div class="col align-self-center">
+      <div class="container">
+        <div class="row">         
+          <div class="container m-4">
+          <img src="assets/Imagenes/logo-firefox.svg">
+        </div>
+      </div>
+        <div class="row h5"> Add to Firefox </div>
+        <div class="row"> Minimum version 55</div>
+      </div>
     </div>
+
+    <div class="col align-self-end">
+      <div class="container">
+        <div class="row"> 
+          <div class="container m-4">
+            <img src="assets/Imagenes/logo-opera.svg">
+          </div>
+        </div>
+        <div class="row h5"> Add to Opera </div>
+        <div class="row"> Minimum version 46</div>
+      </div>
+    </div>
+    
   </div>
+
+</div>
 
 
     <!--FAQ-->
 
     <div class="container bg-white text-center my-5">
       <div class="row mb-2" id="tituloFaq">
-        <h2> Frequently Asked Questions</h2>
+        <h3> Frequently Asked Questions</h3>
       </div>
       <div class="row justify-content-center" id="parrafoFaq">
         <div class="col col-6">
@@ -216,17 +251,17 @@
   
 
     <!--FOOTER 1-->
-    <div class="container-fluid bg-primary" id="blueFooter">
+    <div class="container-fluid bg-primary m-5" id="blueFooter">
       <h5 class="">
         Texto <br>
       </h5>
     </div>
 
     <!--FIXED BOTTOM-->
-    <!--TO DO_ CAMBIAR FUENTE Y COLORES - FIXED -->
+    <!--TO DO_ CAMBIAR FUENTE Y COLORES / FIXED -->
 
-    <nav class="navbar navbar-expand bg-dark navbar-dark">
-      <div class="container-fluid p-4">
+    <nav class="navbar navbar-expand bg-dark navbar-dark fixed-bottom">
+      <div class="container p-4">
         <!--padding lateral + padding  top-->
         <ul class="navbar-nav">
           <li class="container">

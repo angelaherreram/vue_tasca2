@@ -5,7 +5,7 @@ $secondary: #FA5959;
 @import '../node_modules/bootstrap/scss/_variables';
 
 $new-colors: (
-    "greyph": #999DA0;
+    "greyph": #999DA0
 );
 
 $theme-colors: map-merge($new-colors, $theme-colors);
