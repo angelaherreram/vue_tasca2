@@ -51,10 +51,8 @@
   </nav>
 
 
-
   <!--PANTALLA INICIO--> 
   <!--TO DO: texto en gris / hover / botones a la izquierda / respostive--> 
-
 
   <div class="container  my-5" id="pantallaInicio">
     <div class="row">
@@ -114,25 +112,70 @@
   </div>
 </div>
 
-  <div class="container">
-    <ul class="nav nav-tabs justify-content-center">
+  <!--TABS-->
+  <!--TO DO: estilo bordes--> 
+  <div class="container " id="myTabs">
+    <ul class="nav nav-tabs justify-content-center m-5">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Simple Bookmarking</a>
+        <a class="nav-link active" href="#bookmarking">Simple Bookmarking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Speedy Searching</a>
+        <a class="nav-link" href="#searching">Speedy Searching</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Easy Sharing</a>
+        <a class="nav-link" href="#sharing">Easy Sharing</a>
       </li>
     </ul>
+
+    <div class="tab-content">
+
+      <!--TABS1-->
+      <div class="tab-pane active" id="bookmarking">
+        <div class="row">
+
+            <div class="col">
+              <div class="container" id="firstImage">
+                <img class="float-start" src="assets/Imagenes/illustration-features-tab-1.svg">
+              </div>
+          </div>
+            <div class="col">
+      
+              <div class="container">
+                <div class="row mb-3">
+                  <h3> Bookmark in one click</h3>
+                </div>
+                <div class="row mb-3">
+                  <h5 class="text-greyph">
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you maange your favourite sites. <br>
+                  </h5>
+                </div>
+                <div class="row">
+                    <form class="container-fluid">
+                      <button class="btn btn-primary" type="button">
+                        More info
+                      </button>
+                    </form>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+      <!--TABS2-->
+      <div class="tab-pane bg-primary" id="searching">
+        searching"</div>
+      <!--TABS3-->
+      <div class="tab-pane" id="sharing">
+        sharing</div>
+
 </div>
 </div>
 
 
   <!--DOWNLOAD EXTENSION-->
 
-  <div class="container bg-white text-center my-5">
+  <div class="container bg-white text-center m-5">
     <div class="row mb-2" id="tituloDownload">
       <h2> Download the extension</h2>
     </div>
