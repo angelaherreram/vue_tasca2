@@ -70,32 +70,32 @@
       </div>
       <div class="col align-self-center order-lg-1" id="columnaIzq">
         <div class="row mb-3 " id="tituloInicio">
-            <h1> A Simple Bookmark Manager</h1>
+          <h1> A Simple Bookmark Manager</h1>
+        </div>
+        <div class="row mb-3" id="parrafoInicio">
+          <h5 class="text-greyph font-weight-light">
+            A clean and simple interface to organize your favourite websites. Open
+            a new browser tab and see your sites load instantly. Try it for free. <br>
+          </h5>
+        </div>
+        <div class="row" id="botonesInicio">
+          <div class="col">
+            <form class="container" id="getChrome">
+              <button class="btn btn-primary" type="button">
+                Get it on Chrome
+              </button>
+            </form>
           </div>
-          <div class="row mb-3" id="parrafoInicio">
-            <h5 class="text-greyph">
-              A clean and simple interface to organize your favourite websites. Open
-              a new browser tab and see your sites load instantly. Try it for free. <br>
-            </h5>
-          </div>
-          <div class="row " id="botonesInicio">
-            <div class="col">
-              <form class="container-fluid" id="getChrome">
-                <button class="btn btn-primary" type="button">
-                  Get it on Chrome
-                </button>
-              </form>
-            </div>
-            <div class="col">
-              <form class="container-fluid" id="getFirefox">
-                <button class="btn btn-primary" type="button">
-                  Get it on Firefox
-                </button>
-              </form>
+          <div class="col">
+            <form class="container" id="getFirefox">
+              <button class="btn btn-primary" type="button">
+                Get it on Firefox
+              </button>
+            </form>
 
-            </div>
           </div>
-      
+        </div>
+
       </div>
 
 
@@ -124,16 +124,16 @@
   <!--TABS-->
   <!--TO DO: estilo bordes + texto negrita + resposive + parche azul + acabar tabs-->
 
-  <div class="container " id="myTabs">
+  <div class="container" id="myTabs">
     <ul class="nav nav-tabs justify-content-center m-5">
-      <li class="nav-item ">
-        <a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a>
+      <li class="nav-item">
+        <strong><a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a></strong>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-greysub" href="#searching">Speedy Searching</a>
+        <strong><a class="nav-link text-greysub" href="#searching">Speedy Searching</a></strong>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-greysub" href="#sharing">Easy Sharing</a>
+        <strong><a class="nav-link text-greysub" href="#sharing">Easy Sharing</a></strong>
       </li>
     </ul>
 
@@ -147,23 +147,23 @@
             </div>
           </div>
           <div class="col align-self-center">
-              <div class="row mb-3">
-                <h3> Bookmark in one click</h3>
-              </div>
-              <div class="row mb-3">
-                <h5 class="text-greyph">
-                  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-                  control over how you maange your favourite sites. <br>
-                </h5>
-              </div>
-              <div class="row">
-                <form class="container-fluid">
-                  <button class="btn btn-primary" type="button">
-                    More info
-                  </button>
-                </form>
+            <div class="row mb-3">
+              <h3> Bookmark in one click</h3>
+            </div>
+            <div class="row mb-3">
+              <h5 class="text-greyph">
+                Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                control over how you maange your favourite sites. <br>
+              </h5>
+            </div>
+            <div class="row">
+              <form class="container-fluid">
+                <button class="btn btn-primary" type="button">
+                  More info
+                </button>
+              </form>
 
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -176,11 +176,15 @@
     </div>
   </div>
 
+  <div class="container my-5">
+    <div class="row"></div>
+  </div>
 
   <!--DOWNLOAD EXTENSION-->
-    <!--TO DO: alinear-->
+  <!--TO DO: alinear no funciona-->
 
-  <div class="container my-5">
+
+  <div class="container mt-5">
     <div class="row text-center mb-2" id="tituloDownload">
       <h3> Download the extension</h3>
     </div>
@@ -195,72 +199,90 @@
   </div>
 
   <div class="container" id="extensions">
-    <div class="row">
-      <div class="col" id="chromeExt">
-        
-          <div class="row my-4" >
-            <div class="container text-center">
-              <img src="assets/Imagenes/logo-chrome.svg">
-            </div>
-          </div>
-            <h5 class="container text-center">
-              Add to Chrome 
-            </h5>
-            <p class="container text-center">
-              Minimum version 62 
-            </p>
+    <div class="row justify-content-center">
+      <div class="col-md-3 p-3 m-4 shadow rounded align-self-top" id="chromeExt">
 
+        <div class="container my-4">
+          <div class="container text-center">
+            <img src="assets/Imagenes/logo-chrome.svg">
+          </div>
+        </div>
+        <h5 class="container text-center">
+          Add to Chrome
+        </h5>
+        <p class="container text-center">
+          Minimum version 62
+        </p>
+        <div class="container pb-2">
+          <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" />
+        </div>
+        <div class="container justify-content-center">
           <form class="container">
             <button class="btn btn-primary" type="button">
               Add & Install Extension
             </button>
           </form>
         </div>
-        <div class="col" id="firefoxExt">
-        
-          <div class="row my-4" >
-            <div class="container text-center">
-              <img src="assets/Imagenes/logo-firefox.svg">
-            </div>
-          </div>
-            <h5 class="container text-center">
-              Add to Firefox            
-            </h5>
-            <p class="container text-center">
-              Minimum version 55
-            </p>
+      </div>
 
-          <form class="container">
-            <button class="btn btn-primary" type="button">
-              Add & Install Extension
-            </button>
-          </form>
-        </div>
-        <div class="col" id="operaExt">
-          <div class="row my-4" >
-            <div class="container text-center">
-              <img src="assets/Imagenes/logo-opera.svg">
-            </div>
+      <div class="col-md-3 p-3 m-4 shadow rounded align-self-center" id="firefoxExt">
+        <div class="container my-4">
+          <div class="container text-center">
+            <img src="assets/Imagenes/logo-firefox.svg">
           </div>
-            <h5 class="container text-center">
-              Add to Opera            
-            </h5>
-            <p class="container text-center">
-              Minimum version 46
-            </p>
-          <form class="container">
+        </div>
+        <h5 class="container text-center">
+          Add to Firefox
+        </h5>
+        <p class="container text-center">
+          Minimum version 55
+        </p>
+        <div class="container pb-2">
+          <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" />
+        </div>
+        <div class="container justify-content-center">
+          <form class="container ">
             <button class="btn btn-primary" type="button">
               Add & Install Extension
             </button>
           </form>
         </div>
+      </div>
+
+      <div class="col-md-3 p-3 m-4 shadow rounded align-self-bottom" id="operaExt">
+        <div class="container my-4">
+          <div class="container text-center">
+            <img src="assets/Imagenes/logo-opera.svg">
+          </div>
+        </div>
+        <h5 class="container text-center">
+          Add to Opera
+        </h5>
+        <p class="container text-center">
+          Minimum version 46
+        </p>
+        <div class="container pb-2">
+          <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" />
+        </div>
+        <div class="container justify-content-center">
+
+          <form class="container ">
+            <button class="btn btn-primary" type="button">
+              Add & Install Extension
+            </button>
+          </form>
+        </div>
+      </div>
+
     </div>
   </div>
 
-
+  <div class="container my-5">
+    <div class="row"></div>
+  </div>
 
   <!--FAQ-->
-      <!--TO DO: responsive + NO FUNCIONA ACORDIO-->
+  <!--TO DO: responsive + NO FUNCIONA ACORDIO-->
 
   <div class="container bg-white text-center my-5">
     <div class="row mb-2" id="tituloFaq">
@@ -276,41 +298,49 @@
         <div class="accordion accordion-flush my-5" id="accordionFaq">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 What is Bookmark?
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaq">
-              <div class="accordion-body">Text text.</div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFaq">
+              <div class="accordion-body"> Text text.</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 How can I request a new browser?
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaq">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFaq">
               <div class="accordion-body">Text text</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 Is there a mobile app?
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaq">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFaq">
               <div class="accordion-body">Text text.</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 What about other Chromium browsers?
               </button>
             </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-collapseFour" data-bs-parent="#accordionFaq">
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-collapseFour"
+              data-bs-parent="#accordionFaq">
               <div class="accordion-body">Text text.</div>
             </div>
           </div>
@@ -324,57 +354,70 @@
     </div>
 
   </div>
-  
+
 
 
 
   <!--*************************NIVELL 2***************************-->
 
   <!--FOOTER 1-->
- <!--TO DO_ AÑADIR BOTON SUBSCRIBE -->
+  <!--TO DO_alinear botón no funciona-->
 
   <div class="container-fluid bg-primary text-light text-center p-5" id="blueFooter">
     <P class="">
       35,000+ ALREADY JOINED
     </P>
     <h2 class="">
-      Stay up-to-date with what we're doing    
+      Stay up-to-date with what we're doing
     </h2>
-    <P class="mt-3">
-      Contact us    
-    </P>
+    <div class="container justify-content-center">
+      <form class="form-inline">
+  
+        <div class="form-group col-3 mb-2">
+          <input type="email" class="form-control text-greyph" id="email" placeholder="email"
+            value="enter your email address">
+        </div>
+        <button type="submit" class="btn btn-secondary text-light mb-2">Contact us</button>
+      </form>
+    </div>
+  
   </div>
 
 
 
   <!--FIXED BOTTOM-->
-  <!--TO DO_ CAMBIAR FUENTE Y COLORES / FIXED -->
+  <!--TO DO_MOVER ICONOS AL FINAL -->
 
   <nav class="navbar navbar-expand bg-dark navbar-dark">
     <div class="container offset-md-1 py-3">
       <!--padding lateral + padding  top-->
-      <ul class="navbar-nav">
-        <li class="container">
-          <a class="navbar-brand" href="#">
-            <img src="assets/Imagenes/logo-bookmark.svg" />
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">FEATURES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">PRICING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">CONTACT</a>
-        </li>
-        <div class="container align-self-center">
-          <img class="" src="assets/Imagenes/icon-facebook.svg">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/Imagenes/logo-bookmark.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container ms-auto">
+        <div class="container">
+          <img class="float-end " src="assets/Imagenes/icon-facebook.svg">
         </div>
-        <div class="container align-self-center">
-          <img class="" src="assets/Imagenes/icon-twitter.svg">
+        <div class="container">
+          <img class="float-end" src="assets/Imagenes/icon-twitter.svg">
         </div>
-      </ul>
+      </div>
+
     </div>
   </nav>
 

@@ -7,8 +7,13 @@ $secondary: #FA5959;
     border-bottom: solid 3px #FA5959;
 }
 
+ 
+.button:hover {
+    background-color: $secondary
+}
+
 //AÑADIR NUEVOS COLORES
-@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/_functions';
 @import '../node_modules/bootstrap/scss/_variables';
 
 $new-colors: (
