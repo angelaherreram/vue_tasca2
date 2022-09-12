@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <!-- cargamos Bootstrap-->
-  <link href="css/main.min.css" rel="stylesheet"/>
+  <link href="css/main.min.css" rel="stylesheet" />
+  <!-- para ver grid
+    <style>
+      * {
+        border: 1px solid black;
+      }
+    </style>-->
 </head>
 
 <body>
@@ -19,47 +25,51 @@
 
   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
 
-    <div class="container ms-5 my-4">
-    <a class="navbar-brand" href="#">
-      <img src="assets/Imagenes/logo-bookmark.svg" />
-    </a>
-  </div>
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <div class="container offset-md-1 my-4">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Imagenes/logo-bookmark.svg" />
+      </a>
+    </div>
 
-      <div class="collapse navbar-collapse me-5 my-4" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active me-4">
-            <a class="nav-link" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item active me-4">
-            <a class="nav-link" href="#">PRICING</a>
-          </li>
-          <li class="nav-item active me-4">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li> 
-          <form class="container me-5">
-            <button class="btn btn-secondary" type="button">
-              LOGIN
-            </button>
-          </form>
-        </ul>
-      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse me-5 my-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active me-4">
+          <a class="nav-link" href="#">FEATURES</a>
+        </li>
+        <li class="nav-item active me-4">
+          <a class="nav-link" href="#">PRICING</a>
+        </li>
+        <li class="nav-item active me-4">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <form class="container me-5">
+          <button class="btn btn-secondary text-light" type="button">
+            LOGIN
+          </button>
+        </form>
+      </ul>
+    </div>
 
   </nav>
 
 
-  <!--PANTALLA INICIO--> 
-  <!--TO DO: texto en gris / hover / botones a la izquierda / respostive / alinear verticalmente foto y texto--> 
+  <!--PANTALLA INICIO-->
+  <!--TO DO: hover / botones a la izquierda / alinear mejor verticalmente foto-->
 
-  <div class="container  my-5" id="pantallaInicio">
+  <div class="container mt-5" id="pantallaInicio">
     <div class="row ">
-      <div class="col mt-5" id="columnaIzq">
-
-        <div class="container mt-5" id="textos-inicio">
-          <div class="row mb-3" id="tituloInicio">
+      <div class="col mt-5 order-lg-2" id="columnaDer">
+        <div class="container mt-5" id="firstImage">
+          <img class="" src="assets/Imagenes/illustration-hero.svg">
+        </div>
+      </div>
+      <div class="col align-self-center order-lg-1" id="columnaIzq">
+        <div class="row mb-3 " id="tituloInicio">
             <h1> A Simple Bookmark Manager</h1>
           </div>
           <div class="row mb-3" id="parrafoInicio">
@@ -68,7 +78,7 @@
               a new browser tab and see your sites load instantly. Try it for free. <br>
             </h5>
           </div>
-          <div class="row" id="botonesInicio">
+          <div class="row " id="botonesInicio">
             <div class="col">
               <form class="container-fluid" id="getChrome">
                 <button class="btn btn-primary" type="button">
@@ -85,81 +95,76 @@
 
             </div>
           </div>
-        </div>
+      
       </div>
-      <div class="col mt-5 " id="columnaDer">
-          <div class="container mt-5" id="firstImage">
-            <img class="float-end" src="assets/Imagenes/illustration-hero.svg">
-          </div>
-      </div>
+
+
 
     </div>
   </div>
 
 
   <!--FEATURES-->
-<!--TO DO: texto en gris + respostive--> 
-<div class="container bg-white text-center my-5">
-  <div class="row mb-2" id="tituloFeatures">
-    <h3> Features</h3>
-  </div>
-  <div class="row justify-content-center" id="parrafoFeatures">
-    <div class="col col-6">
-      <h5>
-        Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. <br>
-      </h5>    
+  <!--TO DO: resposive-->
+
+  <div class="container text-center my-5 ">
+    <div class="row" id="tituloFeatures">
+      <h3> Features</h3>
+    </div>
+    <div class="row justify-content-center" id="parrafoFeatures">
+      <div class="col-xl-6 ">
+        <h5 class="text-greyph">
+          Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between
+          your devices so you can access them on the go. <br>
+        </h5>
+      </div>
     </div>
   </div>
-</div>
 
   <!--TABS-->
-  <!--TO DO: estilo bordes--> 
+  <!--TO DO: estilo bordes + texto negrita + resposive + parche azul + acabar tabs-->
+
   <div class="container " id="myTabs">
     <ul class="nav nav-tabs justify-content-center m-5">
-      <li class="nav-item">
-        <a class="nav-link active" href="#bookmarking">Simple Bookmarking</a>
+      <li class="nav-item ">
+        <a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#searching">Speedy Searching</a>
+        <a class="nav-link text-greysub" href="#searching">Speedy Searching</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#sharing">Easy Sharing</a>
+        <a class="nav-link text-greysub" href="#sharing">Easy Sharing</a>
       </li>
     </ul>
 
-    <div class="tab-content">
-
+    <div class="tab-content  ">
       <!--TABS1-->
       <div class="tab-pane active" id="bookmarking">
-        <div class="row">
+        <div class="row ">
+          <div class="col">
+            <div class="container" id="tab1Image">
+              <img class="float-start" src="assets/Imagenes/illustration-features-tab-1.svg">
+            </div>
+          </div>
+          <div class="col align-self-center">
+              <div class="row mb-3">
+                <h3> Bookmark in one click</h3>
+              </div>
+              <div class="row mb-3">
+                <h5 class="text-greyph">
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                  control over how you maange your favourite sites. <br>
+                </h5>
+              </div>
+              <div class="row">
+                <form class="container-fluid">
+                  <button class="btn btn-primary" type="button">
+                    More info
+                  </button>
+                </form>
 
-            <div class="col">
-              <div class="container" id="firstImage">
-                <img class="float-start" src="assets/Imagenes/illustration-features-tab-1.svg">
               </div>
           </div>
-            <div class="col">
-      
-              <div class="container">
-                <div class="row mb-3">
-                  <h3> Bookmark in one click</h3>
-                </div>
-                <div class="row mb-3">
-                  <h5 class="text-greyph">
-                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you maange your favourite sites. <br>
-                  </h5>
-                </div>
-                <div class="row">
-                    <form class="container-fluid">
-                      <button class="btn btn-primary" type="button">
-                        More info
-                      </button>
-                    </form>
-
-                </div>
-              </div>
-            </div>
-
         </div>
       </div>
       <!--TABS2-->
@@ -168,119 +173,210 @@
       <!--TABS3-->
       <div class="tab-pane" id="sharing">
         sharing</div>
-
-</div>
-</div>
+    </div>
+  </div>
 
 
   <!--DOWNLOAD EXTENSION-->
+    <!--TO DO: alinear-->
 
-  <div class="container bg-white text-center m-5">
-    <div class="row mb-2" id="tituloDownload">
+  <div class="container my-5">
+    <div class="row text-center mb-2" id="tituloDownload">
       <h3> Download the extension</h3>
     </div>
-    <div class="row justify-content-center" id="parrafoDownload">
-      <div class="col col-6">
-      <h5 class="">
-        We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize. <br>
-      </h5>
-    </div>
-  </div>
-  </div>
-
-  <div class="container" id="extensions">
-
-    <div class="row ">
-
-    <div class="col align-self-start ">
-      <div class="container ">
-      <div class="row"> 
-        <div class="container m-4">
-          <img src="assets/Imagenes/logo-chrome.svg">
-        </div>
-      </div>
-      <div class="row h5"> Add to Chrome </div>
-      <div class="row"> Minimum version 62</div>
-    </div>
-    </div>
-
-    <div class="col align-self-center">
-      <div class="container">
-        <div class="row">         
-          <div class="container m-4">
-          <img src="assets/Imagenes/logo-firefox.svg">
-        </div>
-      </div>
-        <div class="row h5"> Add to Firefox </div>
-        <div class="row"> Minimum version 55</div>
-      </div>
-    </div>
-
-    <div class="col align-self-end">
-      <div class="container">
-        <div class="row"> 
-          <div class="container m-4">
-            <img src="assets/Imagenes/logo-opera.svg">
-          </div>
-        </div>
-        <div class="row h5"> Add to Opera </div>
-        <div class="row"> Minimum version 46</div>
-      </div>
-    </div>
-    
-  </div>
-
-</div>
-
-
-    <!--FAQ-->
-
-    <div class="container bg-white text-center my-5">
-      <div class="row mb-2" id="tituloFaq">
-        <h3> Frequently Asked Questions</h3>
-      </div>
-      <div class="row justify-content-center" id="parrafoFaq">
-        <div class="col col-6">
-        <h5 class="">
-          Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us. <br>
+    <div class="row justify-content-center " id="parrafoDownload">
+      <div class="col-xl-6 text-center">
+        <h5 class="text-greyph">
+          We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to
+          prioritize. <br>
         </h5>
       </div>
     </div>
-    
+  </div>
+
+  <div class="container" id="extensions">
+    <div class="row">
+      <div class="col" id="chromeExt">
+        
+          <div class="row my-4" >
+            <div class="container text-center">
+              <img src="assets/Imagenes/logo-chrome.svg">
+            </div>
+          </div>
+            <h5 class="container text-center">
+              Add to Chrome 
+            </h5>
+            <p class="container text-center">
+              Minimum version 62 
+            </p>
+
+          <form class="container">
+            <button class="btn btn-primary" type="button">
+              Add & Install Extension
+            </button>
+          </form>
+        </div>
+        <div class="col" id="firefoxExt">
+        
+          <div class="row my-4" >
+            <div class="container text-center">
+              <img src="assets/Imagenes/logo-firefox.svg">
+            </div>
+          </div>
+            <h5 class="container text-center">
+              Add to Firefox            
+            </h5>
+            <p class="container text-center">
+              Minimum version 55
+            </p>
+
+          <form class="container">
+            <button class="btn btn-primary" type="button">
+              Add & Install Extension
+            </button>
+          </form>
+        </div>
+        <div class="col" id="operaExt">
+          <div class="row my-4" >
+            <div class="container text-center">
+              <img src="assets/Imagenes/logo-opera.svg">
+            </div>
+          </div>
+            <h5 class="container text-center">
+              Add to Opera            
+            </h5>
+            <p class="container text-center">
+              Minimum version 46
+            </p>
+          <form class="container">
+            <button class="btn btn-primary" type="button">
+              Add & Install Extension
+            </button>
+          </form>
+        </div>
     </div>
+  </div>
+
+
+
+  <!--FAQ-->
+      <!--TO DO: responsive + NO FUNCIONA ACORDIO-->
+
+  <div class="container bg-white text-center my-5">
+    <div class="row mb-2" id="tituloFaq">
+      <h3> Frequently Asked Questions</h3>
+    </div>
+
+    <div class="row justify-content-center" id="parrafoFaq">
+      <div class="col-xl-6">
+        <h5 class="text-greyph">
+          Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+          <br>
+        </h5>
+        <div class="accordion accordion-flush my-5" id="accordionFaq">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Bookmark?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">Text text.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How can I request a new browser?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">Text text</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Is there a mobile app?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">Text text.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What about other Chromium browsers?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-collapseFour" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">Text text.</div>
+            </div>
+          </div>
+        </div>
+        <form class="container-fluid">
+          <button class="btn btn-primary" type="button">
+            More info
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
   
 
-    <!--FOOTER 1-->
-    <div class="container-fluid bg-primary m-5" id="blueFooter">
-      <h5 class="">
-        Texto <br>
-      </h5>
+
+
+  <!--*************************NIVELL 2***************************-->
+
+  <!--FOOTER 1-->
+ <!--TO DO_ AÑADIR BOTON SUBSCRIBE -->
+
+  <div class="container-fluid bg-primary text-light text-center p-5" id="blueFooter">
+    <P class="">
+      35,000+ ALREADY JOINED
+    </P>
+    <h2 class="">
+      Stay up-to-date with what we're doing    
+    </h2>
+    <P class="mt-3">
+      Contact us    
+    </P>
+  </div>
+
+
+
+  <!--FIXED BOTTOM-->
+  <!--TO DO_ CAMBIAR FUENTE Y COLORES / FIXED -->
+
+  <nav class="navbar navbar-expand bg-dark navbar-dark">
+    <div class="container offset-md-1 py-3">
+      <!--padding lateral + padding  top-->
+      <ul class="navbar-nav">
+        <li class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/Imagenes/logo-bookmark.svg" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">CONTACT</a>
+        </li>
+        <div class="container align-self-center">
+          <img class="" src="assets/Imagenes/icon-facebook.svg">
+        </div>
+        <div class="container align-self-center">
+          <img class="" src="assets/Imagenes/icon-twitter.svg">
+        </div>
+      </ul>
     </div>
-
-    <!--FIXED BOTTOM-->
-    <!--TO DO_ CAMBIAR FUENTE Y COLORES / FIXED -->
-
-    <nav class="navbar navbar-expand bg-dark navbar-dark fixed-bottom">
-      <div class="container p-4">
-        <!--padding lateral + padding  top-->
-        <ul class="navbar-nav">
-          <li class="container">
-            <a class="navbar-brand" href="#">
-              <img src="assets/Imagenes/logo-bookmark.svg" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  </nav>
 
 
 

@@ -1,11 +1,19 @@
 $principal: #5265E1;
 $secondary: #FA5959;
 
+
+#myTabs li a.active {
+    border-width: 0; 
+    border-bottom: solid 3px #FA5959;
+}
+
+//AÑADIR NUEVOS COLORES
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/_variables';
 
 $new-colors: (
-    "greyph": #999DA0
+    "greyph": #999DA0,
+    "greysub": #616161
 );
 
 $theme-colors: map-merge($new-colors, $theme-colors);
