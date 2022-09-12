@@ -1,27 +1,94 @@
 $principal: #5265E1;
 $secondary: #FA5959;
 
-
-#myTabs li a.active {
-    border-width: 0; 
-    border-bottom: solid 3px #FA5959;
-}
-
- 
-.button:hover {
-    background-color: $secondary
-}
-
 //AÑADIR NUEVOS COLORES
 @import '../node_modules/bootstrap/scss/_functions';
 @import '../node_modules/bootstrap/scss/_variables';
 
 $new-colors: (
     "greyph": #999DA0,
-    "greysub": #616161
+    "greysub": #616161,
+    "greyli": #ffffff
 );
 
 $theme-colors: map-merge($new-colors, $theme-colors);
+
+
+#myTabs li a.active {
+    border-width: 0; 
+    border-bottom: solid 3px #FA5959;
+}
+
+#navbarNav li a:hover{
+    color: $secondary
+}
+
+#getFirefox form button {
+    font-weight: bold;
+    color: #616161
+    
+    &:hover {
+        color: #616161;
+        border: 2px solid #616161;
+        background-color: white;
+        font-weight: bolder
+    }
+}
+
+#getChrome form button {
+    &:hover {
+        color: $principal;
+        border: 2px solid $principal;
+        background-color: white;
+        font-weight: bolder;
+    }
+}
+
+.button {
+    font-weight: bold;
+}
+
+#loginNav form button {
+    color: white; 
+    &:hover {
+        color: $secondary;
+        border: 2px solid $secondary;
+        background-color: white;
+        font-weight: bolder;
+    }
+}
+
+
+#extensions form button {
+    &:hover {
+        color: $principal;
+        border: 2px solid $principal;
+        background-color: white;
+        font-weight: bolder;
+    }
+}
+
+.accordion-button{
+    font-weight: bolder;
+
+    &:hover {
+        color: $secondary
+    }
+}
+
+#contactBut button {
+    color: white; 
+    &:hover {
+        color: $secondary;
+        border: 2px solid $secondary;
+        background-color: white;
+        font-weight: bolder;
+    }
+}
+
+#navbarFoot li a:hover{
+    color: $secondary
+}
 
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';

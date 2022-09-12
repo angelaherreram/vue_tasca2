@@ -47,11 +47,13 @@
         <li class="nav-item active me-4">
           <a class="nav-link" href="#">CONTACT</a>
         </li>
-        <form class="container me-5">
-          <button class="btn btn-secondary text-light" type="button">
+        <div id="loginNav">
+        <form class="container me-5" >
+          <button class="btn btn-secondary" type="button" >
             LOGIN
           </button>
         </form>
+      </div>
       </ul>
     </div>
 
@@ -79,16 +81,17 @@
           </h5>
         </div>
         <div class="row" id="botonesInicio">
-          <div class="col">
-            <form class="container" id="getChrome">
+
+          <div class="col " id="getChrome">
+            <form class="container" >
               <button class="btn btn-primary" type="button">
                 Get it on Chrome
               </button>
             </form>
           </div>
-          <div class="col">
-            <form class="container" id="getFirefox">
-              <button class="btn btn-primary" type="button">
+          <div class="col" id="getFirefox">
+            <form class="container" >
+              <button class="btn btn-greyli shadow-sm" type="button">
                 Get it on Firefox
               </button>
             </form>
@@ -127,17 +130,17 @@
   <div class="container" id="myTabs">
     <ul class="nav nav-tabs justify-content-center m-5">
       <li class="nav-item">
-        <strong><a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a></strong>
+        <a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a>
       </li>
       <li class="nav-item">
-        <strong><a class="nav-link text-greysub" href="#searching">Speedy Searching</a></strong>
+        <a class="nav-link text-greysub"  href="#searching">Speedy Searching</a>
       </li>
       <li class="nav-item">
-        <strong><a class="nav-link text-greysub" href="#sharing">Easy Sharing</a></strong>
+        <a class="nav-link text-greysub" href="#sharing">Easy Sharing</a>
       </li>
     </ul>
 
-    <div class="tab-content  ">
+    <div class="tab-content">
       <!--TABS1-->
       <div class="tab-pane active" id="bookmarking">
         <div class="row ">
@@ -377,7 +380,10 @@
           <input type="email" class="form-control text-greyph" id="email" placeholder="email"
             value="enter your email address">
         </div>
-        <button type="submit" class="btn btn-secondary text-light mb-2">Contact us</button>
+        <div id="contactBut" >
+          <button type="submit" class="btn btn-secondary mb-2">Contact us</button>
+        </div>
+       
       </form>
     </div>
   
@@ -391,7 +397,7 @@
   <nav class="navbar navbar-expand bg-dark navbar-dark">
     <div class="container offset-md-1 py-3">
       <!--padding lateral + padding  top-->
-      <div class="container">
+      <div class="container" id="navbarFoot">
         <ul class="navbar-nav">
           <li class="container">
             <a class="navbar-brand" href="#">
