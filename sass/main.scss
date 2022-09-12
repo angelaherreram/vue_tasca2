@@ -95,11 +95,7 @@ $theme-colors: map-merge($new-colors, $theme-colors);
     color: white;
 }
 
-#navbarFoot img {
-    &:hover {
-    filter: $secondary;
-    }
-}
+
 
 
 //import bootstrap
