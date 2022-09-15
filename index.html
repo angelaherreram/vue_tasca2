@@ -38,13 +38,13 @@
 
     <div class="collapse navbar-collapse me-5 my-4" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active me-4">
+        <li class="nav-item me-4">
           <a class="nav-link" href="#">FEATURES</a>
         </li>
-        <li class="nav-item active me-4">
+        <li class="nav-item me-4">
           <a class="nav-link" href="#">PRICING</a>
         </li>
-        <li class="nav-item active me-4">
+        <li class="nav-item me-4">
           <a class="nav-link" href="#">CONTACT</a>
         </li>
         <div id="loginNav">
@@ -107,6 +107,7 @@
   </div>
 
 
+
   <!--FEATURES-->
   <!--TO DO: resposive-->
 
@@ -124,44 +125,44 @@
     </div>
   </div>
 
+
   <!--TABS-->
   <!--TO DO: estilo bordes + texto negrita + resposive + parche azul + acabar tabs-->
 
-  <div class="container" id="myTabs">
-    <ul class="nav nav-tabs justify-content-center m-5">
-      <li class="nav-item">
-        <a class="nav-link active text-greysub" href="#bookmarking">Simple Bookmarking</a>
+ <div class="container" >
+    <ul class="nav nav-tabs justify-content-center m-5" id="myTabs" role="tablist">
+      <li class="nav-item" role="presentation"> 
+        <button class="nav-link active text-greysub" id="book-tab" data-bs-toggle="tab" data-bs-target="#bookmarking" role="tab" type="button" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button >
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-greysub"  href="#searching">Speedy Searching</a>
+      <li class="nav-item" role="presentation">
+        <button  class="nav-link text-greysub" id="search-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button >
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-greysub" href="#sharing">Easy Sharing</a>
+      <li class="nav-item" role="presentation">
+        <button  class="nav-link text-greysub" id="share-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy Sharing</button >
       </li>
     </ul>
-  </div>
 
     <div class="tab-content">
       <!--TABS1-->
-      <div class="tab-pane active" id="bookmarking">
-        <div class="row ">
+      <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="book-tab">
+        <div class="row">
           <div class="col">
             <div class="container ms-5" id="tab1Image">
-              <img class="float-start" src="assets/Imagenes/illustration-features-tab-1.svg">
+              <img class="p-3 img-fluid" src="assets/Imagenes/illustration-features-tab-1.svg">
             </div>
           </div>
           <div class="col align-self-center">
-            <div class="row mb-3">
+            <div class="row m-3">
               <h3> Bookmark in one click</h3>
             </div>
-            <div class="row mb-3">
+            <div class="row m-3">
               <h5 class="text-greyph">
                 Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
                 control over how you maange your favourite sites. <br>
               </h5>
             </div>
-            <div class="row">
-              <form class="container-fluid">
+            <div class="row m-3">
+              <form class="container-fluid ">
                 <button class="btn btn-primary" type="button">
                   More info
                 </button>
@@ -173,11 +174,11 @@
       </div>
    
       <!--TABS2-->
-      <div class="tab-pane" id="Searching">
+      <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="search-tab">
         <div class="row ">
           <div class="col">
-            <div class="container" id="tab1Image">
-              <img class="float-start" src="assets/Imagenes/illustration-features-tab-2.svg">
+            <div class="container" id="tab2Image">
+              <img class="p-3 img-fluid" src="assets/Imagenes/illustration-features-tab-2.svg">
             </div>
           </div>
           <div class="col align-self-center">
@@ -203,11 +204,11 @@
       </div>
 
       <!--TABS3-->
-      <div class="tab-pane" id="sharing">
+      <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="share-tab">
         <div class="row ">
           <div class="col">
-            <div class="container" id="tab1Image">
-              <img class="float-start" src="assets/Imagenes/illustration-features-tab-3.svg">
+            <div class="container" id="tab3Image">
+              <img class="p-3 img-fluid" src="assets/Imagenes/illustration-features-tab-3.svg">
             </div>
           </div>
           <div class="col align-self-center">
@@ -232,10 +233,12 @@
         </div>
       </div>
   </div>
+</div>
 
   <div class="container my-5">
     <div class="row"></div>
   </div>
+
 
   <!--DOWNLOAD EXTENSION-->
   <!--TO DO: alinear no funciona-->
@@ -257,7 +260,7 @@
 
   <div class="container" id="extensions">
     <div class="row justify-content-center">
-      <div class="col-md-3 p-3 m-4 shadow rounded align-self-top" id="chromeExt">
+      <div class="col-md-3  p-3 m-2 shadow rounded align-self-top" id="chromeExt">
 
         <div class="container my-4">
           <div class="container text-center">
@@ -270,7 +273,7 @@
         <p class="container text-center">
           Minimum version 62
         </p>
-        <div class="container pb-2">
+        <div class="container-fluid pb-2">
           <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" />
         </div>
         <div class="container justify-content-center">
@@ -282,7 +285,7 @@
         </div>
       </div>
 
-      <div class="col-md-3 p-3 m-4 shadow rounded align-self-center" id="firefoxExt">
+      <div class="col-md-3 p-3 m-2 shadow rounded align-self-center" id="firefoxExt">
         <div class="container my-4">
           <div class="container text-center">
             <img src="assets/Imagenes/logo-firefox.svg">
@@ -306,14 +309,15 @@
         </div>
       </div>
 
-      <div class="col-md-3 p-3 m-4 shadow rounded align-self-bottom" id="operaExt">
+      <div class="col-md-3 p-3 m-2 shadow rounded align-self-bottom" id="operaExt">
         <div class="container my-4">
           <div class="container text-center">
             <img src="assets/Imagenes/logo-opera.svg">
           </div>
         </div>
         <h5 class="container text-center">
-          Add to Opera
+          Add to 
+          Opera   
         </h5>
         <p class="container text-center">
           Minimum version 46
@@ -322,7 +326,6 @@
           <img src="assets/Imagenes/bg-dots.svg" class="img-fluid" />
         </div>
         <div class="container justify-content-center">
-
           <form class="container ">
             <button class="btn btn-primary" type="button">
               Add & Install Extension
@@ -338,6 +341,7 @@
     <div class="row"></div>
   </div>
 
+
   <!--FAQ-->
   <!--TO DO: responsive + NO FUNCIONA ACORDIO-->
 
@@ -352,56 +356,67 @@
           Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
           <br>
         </h5>
-        <div class="accordion accordion-flush my-5" id="accordionFaq">
+      </div>
+
+      <div class="row justify-content-center ">
+        <div class="accordion accordion-flush col-xl-6 my-5" id="accordionFaq">
+
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+            <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 What is Bookmark?
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
               data-bs-parent="#accordionFaq">
-              <div class="accordion-body"> Text text.</div>
+              <div class="accordion-body"> 
+                Text text.
+              </div>
             </div>
           </div>
+
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+            <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 How can I request a new browser?
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionFaq">
               <div class="accordion-body">Text text</div>
             </div>
           </div>
+
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Is there a mobile app?
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionFaq">
-              <div class="accordion-body">Text text.</div>
+              <div class="accordion-body"> Text text.</div>
             </div>
           </div>
+
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 What about other Chromium browsers?
               </button>
             </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-collapseFour"
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
               data-bs-parent="#accordionFaq">
               <div class="accordion-body">Text text.</div>
             </div>
           </div>
         </div>
+      </div>
+
         <form class="container-fluid">
           <button class="btn btn-primary" type="button">
             More info
@@ -421,25 +436,30 @@
   <!--TO DO_alinear botón no funciona-->
 
   <div class="container-fluid bg-primary text-light text-center p-5" id="blueFooter">
-    <P class="">
-      35,000+ ALREADY JOINED
-    </P>
-    <h2 class="">
+    <div class="row">
+    <P> 35,000+ ALREADY JOINED </P>
+  </div>
+  <div class="row">
+        <h2>
       Stay up-to-date with what we're doing
     </h2>
-    <div class="container justify-content-center">
-      <form class="form-inline">
-  
-        <div class="form-group col-3 mb-2">
-          <input type="email" class="form-control text-greyph" id="email" placeholder="email"
-            value="enter your email address">
+  </div>
+  <div class="container p-3">
+
+      <form class="row g-2 justify-content-center was-validated" novalidate >
+        <div class="col-auto">
+          <input type="email" class="form-control text-greyph" id="email" placeholder="enter your email address">
+          <div class="invalid-feedback bg-secondary text-light rounded">
+            The email address is invalid
+          </div>
         </div>
-        <div id="contactBut" >
+        <div class="col-auto" id="contactBut">
           <button type="submit" class="btn btn-secondary mb-2">Contact us</button>
         </div>
-       
       </form>
-    </div>
+  
+  </div>
+
   
   </div>
 
